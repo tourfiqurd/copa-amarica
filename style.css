@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: rgb(235, 235, 235);
+}
+
 /*--------------------
  Styling first-section
  --------------------- */
@@ -56,6 +60,7 @@ nav ul li {
 
 }
 
+/* for tab and dextop */
 @media only screen and (min-width: 600px) {
     .nav-container {
         display: flex;
@@ -146,6 +151,81 @@ nav ul li {
 
     }
 
+
+
+
+}
+
+/*--------------------
+ Styling players-section
+ --------------------- */
+.players-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+
+}
+
+.player {
+    /* box-shadow: 10px 10px 30px black; */
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.player img {
+    width: 100%;
+
+}
+
+.players {
+    width: 80%;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+
+    }
+
+}
+
+/* for tab and dextop */
+@media only screen and (min-width: 600px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+
+    }
 
 
 }
