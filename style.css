@@ -317,3 +317,24 @@ Styling heighlight section
 
 
 }
+
+
+/* footer-section starts here */
+.footer-section {
+    text-align: center;
+}
+
+.footer-icon i {
+    color: gray;
+    font-size: 26px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+.footer-icon p {
+    font-size: 16px;
+    color: gray;
+}
