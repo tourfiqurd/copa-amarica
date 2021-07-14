@@ -174,11 +174,18 @@ nav ul li {
 
 }
 
+.players-desc p {
+    color: gray;
+
+
+}
+
 .player {
     /* box-shadow: 10px 10px 30px black; */
-    padding: 10px;
+    padding: 15px;
     background-color: rgb(255, 255, 255);
 }
+
 
 .player img {
     width: 100%;
@@ -194,9 +201,10 @@ nav ul li {
     .players {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
 
-        grid-column-gap: 20px;
-        grid-row-gap: 30px;
+
+
 
     }
 
@@ -207,9 +215,9 @@ nav ul li {
     .players {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
 
-        grid-column-gap: 20px;
-        grid-row-gap: 30px;
+
 
     }
 
@@ -221,9 +229,89 @@ nav ul li {
     .players {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
-        grid-column-gap: 20px;
-        grid-row-gap: 30px;
+
+
+    }
+
+
+}
+
+/* ---------------------
+Styling heighlight section
+--------------------------- */
+.Heighlight-sec {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.heighlight-text h1 {
+    font-size: 50px;
+}
+
+.heighlight-text p {
+    color: gray;
+    font-size: 16px;
+
+}
+
+.heighlight-text button {
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .Heighlight-sec {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .heighlight-text {
+        text-align: left;
+
+    }
+
+
+
+}
+
+/* for tab */
+@media only screen and (min-width: 600px) {
+    .Heighlight-sec {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .heighlight-text {
+        text-align: center;
+
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Heighlight-sec {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        flex-direction: row;
+    }
+
+    .heighlight-text {
+        text-align: left;
 
     }
 
