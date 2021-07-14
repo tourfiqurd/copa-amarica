@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------
+ Styling first-section
+ --------------------- */
+.first-section {
+    background-color: #2D05A0;
+}
+
+/* first section navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-container .button button {
+
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .nav-container {
+
+        flex-direction: column;
+
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 50px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+}
+
+
+/*--------------------
+ Styling copa-section
+ --------------------- */
+.copa-section {
+    display: flex;
+
+    align-items: center;
+}
+
+.copa-image {
+    width: 50%;
+
+}
+
+
+.copa-image img {
+
+
+    width: 100%;
+}
+
+.copa-heading {
+    padding: 100px;
+
+    width: 50%;
+
+}
+
+.copa-heading h1 {
+    font-size: 44px;
+    color: white;
+    font-weight: 900;
+}
+
+.copa-heading button {
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .copa-section {
+        text-align: left;
+
+        flex-direction: column;
+        align-items: unset;
+
+    }
+
+    .copa-heading {
+        margin-top: 50px;
+        padding: 20px;
+
+
+        width: 50%;
+
+    }
+
+    .copa-heading h1 {
+
+        font-size: 54px;
+
+    }
+
+    .copa-image {
+        width: 95%;
+
+    }
+
+
+
+}
+
+/* fprsjfosdiofjsdoif tab */
