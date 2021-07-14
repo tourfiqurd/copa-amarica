@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+span {
+    color: tomato;
+}
+
 body {
     background-color: rgb(235, 235, 235);
 }
@@ -14,9 +18,9 @@ body {
     text-align: center;
 }
 
-/*--------------------
- Styling first-section
- --------------------- */
+/* ----------------------------------------------------------------------------------
+                                    First-section
+------------------------------------------------------------------------------------- */
 .first-section {
     background-color: #2D05A0;
 }
@@ -36,7 +40,7 @@ nav {
 
 nav ul li {
     list-style: none;
-    font-size: 13px;
+    font-size: 16px;
     color: white;
     padding: 10px;
     margin: 5px;
@@ -49,7 +53,17 @@ nav ul li {
     background-color: #E02C6D;
     color: white;
     border: none;
+    transition: .2s;
+    cursor: pointer;
 }
+
+.nav-container .button button:hover {
+
+
+    background-color: #861b43;
+
+}
+
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -86,9 +100,9 @@ nav ul li {
 }
 
 
-/*--------------------
- Styling copa-section
- --------------------- */
+/* ----------------------------------------------------------------------------------
+                                    Copa-section
+------------------------------------------------------------------------------------- */
 .copa-section {
     display: flex;
 
@@ -97,6 +111,7 @@ nav ul li {
 
 .copa-image {
     width: 50%;
+    padding-right: 50px;
 
 }
 
@@ -105,6 +120,11 @@ nav ul li {
 
 
     width: 100%;
+    transition: 1s;
+}
+
+.copa-image img:hover {
+    transform: rotate(15deg);
 }
 
 .copa-heading {
@@ -115,7 +135,7 @@ nav ul li {
 }
 
 .copa-heading h1 {
-    font-size: 44px;
+    font-size: 64px;
     color: white;
     font-weight: 900;
 }
@@ -126,6 +146,12 @@ nav ul li {
     background-color: #E02C6D;
     color: white;
     border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.copa-heading button:hover {
+    background-color: #861b43;
 }
 
 @media only screen and (max-width: 768px) {
@@ -162,9 +188,9 @@ nav ul li {
 
 }
 
-/*--------------------
- Styling players-section
- --------------------- */
+/* ----------------------------------------------------------------------------------
+                                    Players-section
+------------------------------------------------------------------------------------- */
 .players-section {
     display: flex;
     justify-content: center;
@@ -181,9 +207,17 @@ nav ul li {
 }
 
 .players-desc p {
-    color: gray;
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+    text-align: justify;
 
 
+}
+
+.players-desc h3 {
+    font-size: 28px;
 }
 
 .player {
@@ -244,9 +278,9 @@ nav ul li {
 
 }
 
-/* ---------------------
-Styling heighlight section
---------------------------- */
+/* ----------------------------------------------------------------------------------
+                                    Heighlight-section
+------------------------------------------------------------------------------------- */
 .Heighlight-sec {
     display: flex;
     align-items: center;
@@ -269,8 +303,16 @@ Styling heighlight section
     background-color: #E02C6D;
     color: white;
     border: none;
+    cursor: pointer;
+    transition: .2s;
 
 }
+
+.heighlight-text button:hover {
+    background-color: #861b43;
+}
+
+
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -324,87 +366,17 @@ Styling heighlight section
 
 }
 
-/* -------------------
-    gallery section
---------------------- */
-.images img {
-    width: 100%;
-    height: 100%;
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-
-}
-
-.images-2 img {
-    width: 100%;
-    height: 60%;
-}
-
-.images-2 {
-    margin-top: 5px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-
-}
-
-@media only screen and (max-width: 768px) {
-    .images {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 5px;
-
-    }
-
-    .images-2 {
-        margin-top: 5px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
-
-    }
-
-    .images-2 img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* for tab */
-@media only screen and (min-width: 600px) {}
 
 
 
 
-/* footer-section starts here */
-.footer-section {
-    text-align: center;
-}
-
-.footer-icon i {
-    color: gray;
-    font-size: 26px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    margin: 10px;
-
-}
-
-.footer-icon p {
-    font-size: 16px;
-    color: gray;
-}
 
 
 
-/* ------------------
-news section
----------------- */
+
+/* ----------------------------------------------------------------------------------
+                                    News-section
+------------------------------------------------------------------------------------- */
 .news-secton {
     display: flex;
     align-items: center;
@@ -419,10 +391,16 @@ news section
 }
 
 .news img {
+
     width: 100%;
     border-radius: 5px;
     height: 250px;
 
+
+}
+
+.news h5 {
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -448,4 +426,103 @@ news section
 
         flex-direction: row;
     }
+}
+
+/* ----------------------------------------------------------------------------------
+                                    Gallery-section
+------------------------------------------------------------------------------------- */
+.images img {
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.images img:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+
+}
+
+.images-2 img {
+    width: 100%;
+    height: 60%;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.images-2 img:hover {
+    transform: scale(1.1);
+
+}
+
+.images-2 {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+
+    }
+
+    .images-2 {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+
+    }
+
+    .images-2 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------
+                                    footer-section
+------------------------------------------------------------------------------------- */
+.footer-section {
+    text-align: center;
+}
+
+.footer-icon i {
+    color: gray;
+    font-size: 26px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.footer-icon i:hover {
+    background-color: #2D05A0;
+    color: white;
+}
+
+.footer-icon p {
+    font-size: 16px;
+    color: gray;
 }
